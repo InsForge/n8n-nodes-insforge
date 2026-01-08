@@ -1,19 +1,22 @@
 {
-	"name": "n8n-nodes-<...>",
+	"name": "n8n-nodes-insforge",
 	"version": "0.1.0",
-	"description": "",
+	"description": "n8n community node for InsForge database operations",
 	"license": "MIT",
-	"homepage": "",
+	"homepage": "https://docs.insforge.dev/introduction",
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package",
+		"insforge",
+		"database",
+		"baas"
 	],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "InsForge",
+		"email": "support@insforge.dev"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/<...>/n8n-nodes-<...>.git"
+		"url": "https://github.com/insforge/n8n-nodes-insforge.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
@@ -31,12 +34,10 @@
 		"n8nNodesApiVersion": 1,
 		"strict": true,
 		"credentials": [
-			"dist/credentials/GithubIssuesApi.credentials.js",
-			"dist/credentials/GithubIssuesOAuth2Api.credentials.js"
+			"dist/credentials/InsForgeApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/GithubIssues/GithubIssues.node.js",
-			"dist/nodes/Example/Example.node.js"
+			"dist/nodes/InsForge/InsForge.node.js"
 		]
 	},
 	"devDependencies": {
