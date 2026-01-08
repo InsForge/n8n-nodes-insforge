@@ -10,6 +10,8 @@ export class InsForgeApi implements ICredentialType {
 
 	displayName = 'InsForge API';
 
+	documentationUrl = 'https://docs.insforge.dev/introduction';
+
 	icon = { light: 'file:insforge.svg', dark: 'file:insforge.dark.svg' } as const;
 
 	properties: INodeProperties[] = [

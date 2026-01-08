@@ -51,7 +51,7 @@ export const rowUpdateDescription: INodeProperties[] = [
 		},
 		default: 'id',
 		description: 'Comma-separated list of input fields to ignore when auto-mapping',
-		placeholder: 'e.g. id,created_at',
+		placeholder: 'e.g. ID,created_at',
 	},
 	{
 		displayName: 'Fields to Send',

@@ -1,12 +1,14 @@
 import type { INodeProperties } from 'n8n-workflow';
 
 export const tableNameProperty: INodeProperties = {
-	displayName: 'Table Name',
+	displayName: 'Table Name or ID',
 	name: 'tableId',
 	type: 'options',
 	typeOptions: {
 		loadOptionsMethod: 'getTables',
 	},
+	description:
+		'Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>',
 	required: true,
 	default: '',
 };
